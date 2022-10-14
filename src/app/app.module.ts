@@ -6,18 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
+import { SearchstudComponent } from './searchstud/searchstud.component';
 
 const routes:Routes=[
   {
-
-  }
-]
+    path:"",component:AddstudentComponent
+  },
+  {
+    path:"search",component:SearchstudComponent
+  }]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddstudentComponent
+    AddstudentComponent,
+    SearchstudComponent
   ],
   imports: [
     BrowserModule,
